@@ -28,3 +28,10 @@ int main() {
 /* TODO: try to complete this tutorial on compiling programs:
  * https://www-cs.ccny.cuny.edu/~wes/CSC103/commandline.html
  * (helpful if you have installed the virtual machine first) */
+/* TODO: try to modify the above program so that the output says something
+ * like "the largest number was 999" instead of just printing the number as
+ * it does now. */
+/* TODO: replace "cin >> blue" with "cin << blue", try to compile again,
+ * and take note of the somewhat lengthy error message that results. */
+
+// vim:foldlevel=3
