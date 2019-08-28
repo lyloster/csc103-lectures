@@ -23,3 +23,8 @@ int main() {
 	}
 	cout << green << "\n";
 }
+
+/* TODO: read l1.pdf and the first 2 lectures from Prof Li. */
+/* TODO: try to complete this tutorial on compiling programs:
+ * https://www-cs.ccny.cuny.edu/~wes/CSC103/commandline.html
+ * (helpful if you have installed the virtual machine first) */
