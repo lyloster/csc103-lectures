@@ -16,22 +16,19 @@ int main() {
 	green = INT_MIN; /* INT_MIN sort of like -infinity... */
 	/* let's work on steps 1-3: */
 	while (cin >> blue) { /* listen until no more numbers spoken */
-		// cin >> blue; /* step 1. */
+		 //cin >>  blue; /* step 1. */
 		if (blue > green) { /* steps 2+3 */
 			green = blue;
 		}
 	}
-	cout << green << "\n";
+	cout << "The largest number was " << green << "\n";
 }
 
-/* TODO: read l1.pdf and the first 2 lectures from Prof Li. */
-/* TODO: try to complete this tutorial on compiling programs:
- * https://www-cs.ccny.cuny.edu/~wes/CSC103/commandline.html
- * (helpful if you have installed the virtual machine first) */
-/* TODO: try to modify the above program so that the output says something
- * like "the largest number was 999" instead of just printing the number as
- * it does now. */
+
 /* TODO: replace "cin >> blue" with "cin << blue", try to compile again,
  * and take note of the somewhat lengthy error message that results. */
 
 // vim:foldlevel=3
+
+
+
