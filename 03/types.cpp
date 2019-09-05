@@ -9,6 +9,7 @@ int main()
 	unsigned int y = x;
 	cout << "x == " << x << "\n"
 		 << "y == " << y << "\n";
+
 	/* NOTE: the pattern of bits in memory for x is the
 	 * same as the pattern for y, but the *interpretation*
 	 * is different. */
@@ -27,12 +28,15 @@ int main()
 	/* let's take a moment to explore how arithmetic works. */
 	cout << "9/4   == " << 9/4 << "\n";
 	cout << "9/4.0 == " << 9/4.0 << "\n";
+
 	/* NOTE: performing arithmetic on integers with other integers will always
 	 * result in an integral type.  However, when mixing integer and floating
 	 * point, the result is "promoted" to a floating point type. */
+
 	/* NOTE: it might seem like integer divisions somehow "lose precision",
 	 * but note that you can also recover the *remainder* of a division by
 	 * using the '%' operator.  TODO: try it out. */
+
 	/* NOTE: be aware that using floating point can lead to
 	 * rounding errors, which may be non-trivial!  In particular,
 	 * you can find examples where basic algebraic identities
@@ -43,6 +47,7 @@ int main()
 	a = 0;
 	b = 0;
 	c = 0;
+
 	if (a+c == b+c) {
 		cout << "a+c == b+c\n";
 		if (a != b) {
