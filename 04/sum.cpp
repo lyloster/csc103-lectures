@@ -8,6 +8,7 @@ int main ()
 	int input;		  /* blue note */
 	int temporary_sum;  /* store green+blue here */
 	sum_so_far = 0;  /* step 1 */
+	/* NOTE: integers are NOT initialized to 0 by default! */
 	while (cin >> input) {  /* step 2 moved to condition... */
 		// cin >> input;	/* step 2 */
 		temporary_sum = sum_so_far + input; /* step 3 */
