@@ -16,21 +16,15 @@ int main()
 	 * */
 	int n,m;
 	cin >> n >> m;
-	int min;
-	if (m < n) {
-		min = m;
-	}
-	else {
+	int min =  m ;
+	if (m > n) {
 		min = n;
 	}
-	/* TODO: shorten the above by unconditionally assigning to min
-	 * one of the inputs, then checking if you made the right
-	 * choice.  (This will eliminate the "else" part.) */
 	int d = min; /* d is our candidate for gcd(n,m) */
-	while (!(n%d == 0 && m%d == 0)) {
+ 	while (!(n%d == 0 && m%d == 0)) {
 		d--;
 	}
-	/* NOTE: plain english translation: while d is not a common
+ 	/* NOTE: plain english translation: while d is not a common
 	 * divisor of n and m, decrement d. */
 	printf("gcd(%i,%i) = %i\n",n,m,d);
 	return 0;
@@ -43,12 +37,5 @@ int main()
  * I.e., compute 1+4+9+...+10000 */
 /* TODO: a slight generalization of an earlier exercise: for integers
  * n and k, determine the largest power of k that divides n.
- * NOTE: see if you can formalize the invariant you used to solve this.
- * (See l2.pdf regarding invariants.)
- * */
-/* TODO: write a program that reads (arbitrarily many) integers from
- * stdin and outputs the *second* smallest one.  NOTE: you don't need
- * to store many numbers (all at once, that is) to do this!  You'll
- * only need a few integer variables.  Think about invariants! */
 
 // vim:foldlevel=1
