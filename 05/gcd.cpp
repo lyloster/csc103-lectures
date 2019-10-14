@@ -30,12 +30,8 @@ int main()
 	return 0;
 }
 
-/* TODO: write a loop that prints the sum of the first n odd cubes. */
-/* TODO: write a brute force test for perfect cubes.  Check if
- * n = k^3 for some integer k.  */
-/* TODO: sum the squares of all integers from 1..100.
- * I.e., compute 1+4+9+...+10000 */
+
 /* TODO: a slight generalization of an earlier exercise: for integers
  * n and k, determine the largest power of k that divides n.
 
-// vim:foldlevel=1
+
