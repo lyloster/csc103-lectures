@@ -7,6 +7,7 @@ using std::cout;
 using std::endl;
 
 int sumOfCubes (int n);
+bool isOddCube (int cube);
 
 int main(){
 	int n, sum;
@@ -20,14 +21,21 @@ int main(){
 int sumOfCubes (int n){
 	int cube = 0;
 	int sum = 0;
-	for (int i = 1; i <=  n; i++){
-		cout << "i is " << i << endl;
-		cube = i*i*i;
-		cout << "cube is" << cube << endl;
-		if(cube%2 == 1){
-			sum += cube;
-			cout << "sum is " << sum << endl;
-		}
+	int i = 1;
+
+
+while(n >= 0){
+	cube = i*i*i;
+	if(isOddCube(cube)){
+		sum += cube;
+		n--;
 	}
+	i++;
 	return sum;
+}
+}
+
+bool isOddCube (int cube){
+	if(cube % 2 == 1) return true;
+	else return false;
 }
