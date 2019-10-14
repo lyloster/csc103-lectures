@@ -18,10 +18,15 @@ int main(){
 }
 
 int sumOfCubes (int n){
+	int cube = 0;
 	int sum = 0;
-	for (int i = 1; i < n; i++){
-		if(i%2 == 1){
-			sum += i*i*i;
+	for (int i = 1; i <=  n; i++){
+		cout << "i is " << i << endl;
+		cube = i*i*i;
+		cout << "cube is" << cube << endl;
+		if(cube%2 == 1){
+			sum += cube;
+			cout << "sum is " << sum << endl;
 		}
 	}
 	return sum;
