@@ -24,15 +24,21 @@ int sumOfCubes (int n){
 	int i = 1;
 
 
-while(n >= 0){
+while(n > 0){
+	cout << "i is " << i << endl;
 	cube = i*i*i;
+	cout << "cube is " << cube << endl;
 	if(isOddCube(cube)){
+		cout << "sum is " << sum << endl;
 		sum += cube;
 		n--;
 	}
+	cout << " n is " << n << endl;
 	i++;
-	return sum;
+	cout << "i is " << i << endl;
+
 }
+	return sum;
 }
 
 bool isOddCube (int cube){
