@@ -11,34 +11,39 @@ using std::endl;
 using std::string;
 
 void printStars (int n);
-void printHistogram(const map<string,int>& freq);
+void printHistogram( map<string,int>& freq);
 
-int main(void){
+int main(void){ 
 	map<string,int> freq;
 	string s;
 	cout << "Please enter some strings:" << endl;
 	//until end of stdin is reached
-	while(!cin.eof()){
+	while(!cin.eof() ){
 		cin >> s;
 		freq[s]++;
 	}
 	//in arch linux works
 	//in windows command prompt program is getting stuck here
-	for(map<string,int>::iterator i = freq.begin(); i != freq.end(); i++){
-		cout << (*i).first << '\t' << (*i).second << endl;
-	}
+ //	for(map<string,int >::iterator i = freq.begin(); i != freq.end(); i++){
+//		cout << (*i).first << '\t' << (*i).second << endl;
+//	}
 
 	printHistogram(freq);
 	return 0;
 }
 
-void printHistogram(const map<string,int>& freq){
+//TODO: why can't it be constant, is it because of iterator
+void printHistogram(map<string,int>& freq){
 		for(map<string,int>::iterator i = freq.begin(); i != freq.end(); i++){
-		cout << (*i).first << '\t' << printStars((*i).second) << endl;
+			cout << (*i).first << '\t';
+			printStars((*i).second);
+			cout << endl;
 	}
-
 }
 
 void printStars (int n){
-		cout << '*'*n;
+	for(int i = 0; i < n; i++){
+		cout << '*';
+	}
+	cout << endl;
 }
