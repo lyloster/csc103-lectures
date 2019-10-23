@@ -48,22 +48,13 @@ int main()
 	return 0;
 }
 
-/* TODO: you can use sets to sort a vector or an array.  Try it maybe. */
 
-/* TODO: compute the intersection of two sets.
- * Recall that the intersection of two sets is the set
- * consisting of the elements they have in common.  E.g.,
- * intersection of {2,3,4,5,6,7} and {1,2,4,7,11,44} is
- * {2,4,7}.  Here's a start: */
 set<int> intersect(const set<int>& S1, const set<int>& S2) {
 	set<int> I;
-	/* code goes here... */
+	/* NOTE: Done in separate file */
 	return I;
 }
-/* TODO: write a function that returns the union of two sets */
 
-/* TODO: try to implement your own version of set<char> using a vector
- * or array as discussed in class. */
 /* TODO: answer the following question: if A,B are finite sets of
  * sizes n,m respectively, how many different (mathematical) functions
  * f:A-->B are there?  Concretely, how many functions are there that
