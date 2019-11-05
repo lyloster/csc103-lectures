@@ -26,7 +26,7 @@ int main()
 	/* TODO: test out the following shell command using different
 	 * return codes:
 	 * $ ./a.out && echo "success"
-	 * */
+	 * /
 	/* NOTE: the return code of the most recent command you have run
 	 * is stored in a shell variable "$?".  You can examine it from
 	 * your shell by running the command "echo $?" */
