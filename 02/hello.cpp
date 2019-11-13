@@ -21,6 +21,13 @@ int main()
 	 * the shell (the return value of main is used as the "exit code").
 	 * An exit code of 0 is interpreted by the shell as "success",
 	 * and EVERYTHING else is interpreted as "failure". */
+<<<<<<< HEAD
+=======
+	/* TODO: test out the following shell command using different
+	 * return codes:
+	 * $ ./a.out && echo "success"
+	 * /
+>>>>>>> a7f58cd13533a7738d83c52dff7b46e0ae8ac22d
 	/* NOTE: the return code of the most recent command you have run
 	 * is stored in a shell variable "$?".  You can examine it from
 	 * your shell by running the command "echo $?" */
