@@ -1,8 +1,3 @@
-/* TODO: re-write the frequency table example from scratch and make sure you
- * understand why it works. */
-/* TODO: instead of a frequency table, print a histogram (some graphical
- * representation of the numbers). */
-
 /* TODO: try to solve the frequency table problem *WITHOUT* using maps!  Can
  * you do it with just vectors?  How about just sets?  */
 /* TODO: if you managed to solve the above, estimate the number of

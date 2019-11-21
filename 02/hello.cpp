@@ -15,25 +15,22 @@ using std::cin;
 /* the main function is where your program starts. */
 int main()
 {
-	cout << "hello class\n";
-	/* TODO: remove the semicolon, try to compile, take note of the error
-	 * message that will result. */
+	cout << "Hello class\n";
 	return 0;
 	/* NOTE: the "return 0" is used to communicate the value 0 back to
 	 * the shell (the return value of main is used as the "exit code").
 	 * An exit code of 0 is interpreted by the shell as "success",
 	 * and EVERYTHING else is interpreted as "failure". */
+<<<<<<< HEAD
+=======
 	/* TODO: test out the following shell command using different
 	 * return codes:
 	 * $ ./a.out && echo "success"
 	 * /
+>>>>>>> a7f58cd13533a7738d83c52dff7b46e0ae8ac22d
 	/* NOTE: the return code of the most recent command you have run
 	 * is stored in a shell variable "$?".  You can examine it from
 	 * your shell by running the command "echo $?" */
 }
-
-/* TODO: follow the tutorial on "building on the command line" from our
- * homepage.  Then just spend some time experimenting and see what you
- * can learn.  */
 
 // vim:foldlevel=2

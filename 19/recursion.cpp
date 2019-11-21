@@ -16,10 +16,7 @@ void f(int n)
 	}
 	cout << "called with n == " << n << "\n";
 	f(n-1);
-	/* TODO: predict the output of this function on n = 4.
-	 * Then change the order of the cout and the recursive call
-	 * and predict the output of the modified version.
-	 * */
+
 }
 
 int fib(int n)
@@ -39,7 +36,3 @@ int main()
 	return 0;
 }
 
-/* TODO: write a recursive function to compute x^n (x to the n power)
- * where n is an integer. */
-/* TODO: read lecture 5 (l5.pdf) and come to class with questions (or
- * a thorough understanding of the content!). */
