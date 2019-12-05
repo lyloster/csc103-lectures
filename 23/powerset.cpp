@@ -14,39 +14,41 @@ set<set<int> > powerset(set<int>& S)
 		return P;
 	}
 
-	set<int>::iterator x = S.begin();
+	int x = *(S.begin());
 	S.erase(S.begin());
 
 	set<set<int> > powerSet = powerset(S);
-	set<set<int> > xPowerSet;
+	set<set<int> > xPowerSet, completePowerSet;
 	xPowerSet.insert(powerSet.begin(), powerSet.end());
 	//insert an element in each set in the set of sets
 	for (set<set<int> >::iterator i = xPowerSet.begin(); i != xPowerSet.end(); i++){
-		xPowerSet.insert(i.insert(x));
+			set<int> temp;
+			temp.insert((*i).begin(),(*i).end());
+			temp.insert(x);
+			//xPowerSet.insert(temp.begin(),temp.end());
+			completePowerSet.insert(temp);
 	}
 
-	set<set<int> >completePowerSet;
 	completePowerSet.insert(powerSet.begin(), powerSet.end());
-	completePowerSet.insert(xPowerSet.begin(), xPowerSet.end());
+	
 	return completePowerSet;
-
-
-	/* TODO: finish this... */
 }
+
 /* TODO: once you're done writing and testing it, trace the sequence
  * of function calls when run on a set of 3 elements. */
 
-int main(void)
-{
+int main(void){
 	set<int> S = {1,2,3};
 	set<set<int> > powerSet;
 	powerSet = powerset(S);
 	//print out a set of sets
 	for(set<set<int> >::iterator i = powerSet.begin(); i != powerSet.end(); i++){
-		for(set<int>::iterator j = i.begin(); j != i.end(); j++){
-			cout << *j << endl;
+		cout << "{ ";
+		for(set<int>::iterator j = (*i).begin(); j != (*i).end(); j++){
+			
+			 cout << *j << ", ";
 		}
-		cout << endl;
+		cout << "}" <<endl;
 	}
 	return 0;
 }
